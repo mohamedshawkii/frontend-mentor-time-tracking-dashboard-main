@@ -1,0 +1,165 @@
+body {
+  background-color: $Very-dark-blue;
+}
+.container {
+  width: 88%;
+  margin: 2.5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.menu-card {
+  background-color: $Dark-blue;
+  border-radius: 1.6rem;
+  .card-report {
+    background-color: $Blue;
+    border-radius: 1.6rem;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.8rem;
+
+    img {
+      width: 26%;
+      max-width: 136px;
+      border: 3px solid white;
+      border-radius: 50%;
+    }
+    .Report {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 0.5rem;
+
+      p {
+        color: $Pale-Blue;
+        font-size: 1.5rem;
+      }
+      .name {
+        color: white;
+        font-size: 2.43rem;
+        font-weight: 200;
+      }
+    }
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.4rem;
+
+    .menu-links {
+      color: $Desaturated-blue;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+    .menu-links:hover {
+      color: white;
+    }
+    .menu-active {
+      color: white;
+    }
+  }
+}
+.regular-card {
+  border-radius: 1.6rem;
+  padding-top: 1.8rem;
+  background-repeat: no-repeat;
+  background-position-x: 92%;
+
+  .property-card {
+    background-color: $Dark-blue;
+    border-radius: 1.6rem;
+    margin-top: 2rem;
+    padding: 1.2rem;
+
+    &:hover {
+      background-color: $card-hover;
+      cursor: pointer;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1.6rem;
+      .title {
+        color: white;
+        font-size: 1.8rem;
+      }
+      .points {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          .point {
+            background-color: white;
+          }
+        }
+        .point {
+          background-color: $Pale-Blue;
+          width: 0.4rem;
+          height: 0.4rem;
+          border-radius: 50%;
+          margin: 0.2rem;
+        }
+      }
+    }
+    .row2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1rem;
+      padding-bottom: 1.8rem;
+      .short-term {
+        color: white;
+        font-size: 2.5rem;
+      }
+      .long-term {
+        color: $Pale-Blue;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+.work {
+  background-color: $work;
+  background-image: url(../images/icon-work.svg);
+}
+.play {
+  background-color: $play;
+  background-image: url(../images/icon-play.svg);
+}
+.study {
+  background-color: $study;
+  background-image: url(../images/icon-study.svg);
+}
+.exercise {
+  background-color: $exercise-color;
+  background-image: url(../images/icon-exercise.svg);
+}
+.social {
+  background-color: $social;
+  background-image: url(../images/icon-social.svg);
+}
+.self-Care {
+  background-color: $Selfcare-color;
+  background-image: url(../images/icon-self-care.svg);
+}
+
+.attribution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  background-color: $Blue;
+  font-size: 18px;
+  a {
+    color: rgb(219, 219, 219);
+  }
+}
